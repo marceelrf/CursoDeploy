@@ -1,13 +1,5 @@
 library(plumber)
 
-#' Qm esmirilhou?
-#' @param x Dizer quem esmirilhou
-#' @get /mensagem
-function(x){
-  
-  print(paste0(x, " ESMIRILHOU !!!!"))
-}
-
 #' Qual é a média de x,y e z?
 #' @param x valor de x
 #' @param y valor de y
