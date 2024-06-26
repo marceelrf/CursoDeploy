@@ -1,0 +1,10 @@
+sudo apt-get install snapd
+
+sudo snap install --classic certbot
+
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+sudo certbot --nginx
+# aqui você vai incluir seu certificado!
+
+sudo certbot renew --dry-run

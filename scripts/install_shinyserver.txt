@@ -1,0 +1,31 @@
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+
+sudo apt update
+
+sudo apt install r-base
+
+sudo apt-get install libcurl4-openssl-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev  gfortran libgdal-dev libgeos-dev libproj-dev libcairo2-dev libpoppler-cpp-dev libxml2-dev
+
+sudo wget https://github.com/jgm/pandoc/releases/download/3.1.6.1/pandoc-3.1.6.1-1-amd64.deb
+
+sudo dkpg -i pandoc-3.1.6.1-1-amd64.deb
+
+sudo su - -c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/&#39;)\""
+
+sudo su - -c "R -e \"install.packages('rmarkdown', repos='https://cran.rstudio.com/&#39;)\""
+
+sudo su - -c "R -e \"install.packages('pkgload', repos='https://cran.rstudio.com/&#39;)\""
+
+sudo su - -c "R -e \"install.packages('golem', repos='https://cran.rstudio.com/&#39;)\""
+
+sudo apt-get install gdebi-core
+
+wget https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.22.1017-amd64.deb
+
+sudo gdebi shiny-server-1.5.22.1017-amd64.deb
+
+wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2024.04.2-764-amd64.deb
+
+sudo gdebi rstudio-server-2024.04.2-764-amd64.deb
